@@ -1,9 +1,9 @@
 /*
 HyperCSS ©2021
 
-Latest Version: 1.0.2
+Latest Version: 1.0.4
 
-Changes: Gave center more flexibility, added text-justify.
+Changes: Bold, Italic, Underline, Overline
 */
 
 body {
@@ -28,6 +28,26 @@ a {
 }
 
 /*Text*/
+
+.t-underline{
+  text-decoration: underline;
+}
+
+.t-bold{
+  font-weight: 900;
+}
+
+.t-italic{
+  font-style: italic;
+}
+
+.t-overline{
+  text-decoration: overline;
+}
+
+.t-plain{
+  text-decoration: none;
+}
 
 .t-sm {
   font-size: 50%;
@@ -717,6 +737,34 @@ a {
 
 .bd-gray-100 {
   border: 1px solid #ffffff;
+}
+
+.bw-sm{
+  border-width: 1px;
+}
+
+.bw-ms{
+  border-width: 2px;
+}
+
+.bw-md{
+  border-width: 3px;
+}
+
+.bw-ml{
+  border-width: 5px;
+}
+
+.bw-lg{
+  border-width: 10px;
+}
+
+.bw-hg{
+  border-width: 15px;
+}
+
+.bw-en{
+  border-width: 20px;
 }
 
 .rd-sm {
@@ -1993,6 +2041,26 @@ button {
 
 .c-bd-5{
   border: var(--c-bd-5);
+}
+
+.c-bw-1{
+  border-width: var(--c-bw-1)
+}
+
+.c-bw-2{
+  border-width: var(--c-bw-2)
+}
+
+.c-bw-3{
+  border-width: var(--c-bw-3)
+}
+
+.c-bw-4{
+  border-width: var(--c-bw-4)
+}
+
+.c-bw-5{
+  border-width: var(--c-bw-5)
 }
 
 .c-rd-1{
