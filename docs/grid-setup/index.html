@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/debd1c70-ac8e-4e71-8734-0f5c6b32b1f2%2Fpixil-frame-0%20(6).ico?v=1610406373086"
+      type="image/x-icon"
+    />
+    <title>Docs</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://hypercss.glitch.me/dev/hyper.css" />
+    <link rel="stylesheet" href="https://hypercss.glitch.me/css/config.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body class="t-monospace b-grey-10 t-grey-100">
+    <div class="nav pos-sticky">
+      <h1
+        class="t-center t-en hover-t-grey-90 crs-pointer"
+        onclick="window.location = '/'"
+      >
+        HyperCSS docs
+      </h1>
+    </div>
+    <div class="grid c-bw-2 bd-grey-100">
+      <div
+        class="grid-md-10 grid-lg-10 sm-hidden xs-hidden c-bw-1 bd-grey-100 p-sm"
+      >
+        <h2>
+          Contents
+        </h2>
+        <a href="../docs" class="t-plain t-bold">Getting Started</a>
+        <br />
+        <br />
+        <a href="../docs/classes-and-terms" class="t-plain t-bold "
+          >Classes and Terms</a
+        >
+        <br />
+        <br />
+        <a href="../docs/grid-setup" class="t-plain t-bold t-italic"
+          >Grid Setup</a
+        >
+        <br>
+        <br>
+        <a href="../docs/customization" class="t-plain t-bold">Customization</a>
+      </div>
+
+      <div class="grid-md-50 grid-lg-50 grid-sm-60 grid-xs-60 p-sm">
+        <div class="p-md t-ml">
+          <h1>
+            Grid Setup
+          </h1>
+          <h2>
+            60 Columns
+          </h2>
+          <p>
+            The Hyper grid system has 60 columns. This allows you to have 1
+            grids, 2 grids, 3 grids, 4 grids, 5 grids, 6 grids, 10 grids, 12
+            grids, and more. The syntax is pretty easy.
+          </p>
+          <h2>
+            Syntax
+          </h2>
+          <p>
+            The grid system uses 4 sizes: xs (phones), sm (tablets), md (pc's),
+            and lg (desktop large screens). Using these, you can choose how the
+            grid works on all devices.
+          </p>
+          <br />
+          <p>
+            Since the grid has 60 columns, make sure your columns for each row
+            add up to 60. To add a grid, add each grid using the grid class for
+            the container. Then, each piece of the grid has a class
+            grid-&lt;device&gt;-&lt;length&gt; So let's take our HTML document,
+            and try this out.
+          </p>
+          <div class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms t-break">
+            <p>&lt;html&gt;</p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;head&gt;</p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;title&gt;My First HyperCSS
+              Document&lt;/title&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;link
+              rel=&quot;stylesheet&quot;
+              href=&quot;https://hypercss.glitch.me/archives/hyper.css&quot;&gt;
+            </p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;/head&gt;</p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;body class="t-sans-serif"&gt;</p>
+            <p>
+              &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="grid"&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class="t-hg grid-md-20 grid-lg-20 grid-sm-30 grid-xs-30"&gt;This is
+              my first HyperCSS document&lt;/div&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div class="t-ms grid-md-40 grid-lg-40 grid-sm-30 grid-xs-30"&gt;Isn&apos;t
+              that cool?&lt;/div&gt;
+            </p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;/body&gt;</p>
+            <p>&lt;/html&gt;</p>
+          </div>
+          <p>
+             <a href="https://codepen.io/bluephoenix37/pen/eYdLogW" target="_blank">View Codepen Demo</a>
+          </p>
+          <h2>
+            Other things to do with the grid
+          </h2>
+          <p>
+            If you want the same grid for all device sides, and you don't want to have to type out everything, simply use grid-length without
+            the device inbetween, and that will stay the same grid for every device;
+          </p>
+          <p>
+            Also, if you want to hide or show certain items on devices, use &lt;device&gt;-hidden or &lt;device&gt;-show.
+          </p>
+          <a href="../docs/grid-setup">Getting Started with grid</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
