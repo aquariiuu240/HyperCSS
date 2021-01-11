@@ -3,7 +3,7 @@ HyperCSS ©2021
 
 Latest Version: 1.0.4
 
-Changes: Bold, Italic, Underline, Overline
+Changes: Border width added (.bw-<size>)
 */
 
 body {
