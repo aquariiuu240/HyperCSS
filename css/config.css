@@ -1,0 +1,36 @@
+:root {
+  /*Color*/
+  --c-b-1: ;
+  --c-b-2: ;
+  --c-b-3: ;
+  --c-b-4: ;
+  --c-b-5: ;
+  --c-t-1: ;
+  --c-t-2: ;
+  --c-t-3: ;
+  --c-t-4: ;
+  --c-t-5: ;
+  /*Text-Size*/
+  --c-ts-1: ;
+  --c-ts-2: ;
+  --c-ts-3: ;
+  --c-ts-4: ;
+  --c-ts-5: ;
+  /*Border*/
+  --c-bd-1: ;
+  --c-bd-2: ;
+  --c-bd-3: ;
+  --c-bd-4: ;
+  --c-bd-5: ;
+  --c-bw-1: 0px 1px 0px 0px;
+  --c-bw-2: 1px 0px 0px 0px;
+  --c-bw-3: ;
+  --c-bw-4: ;
+  --c-bw-5: ;
+  --c-rd-1: ;
+  --c-rd-2: ;
+  --c-rd-3: ;
+  --c-rd-4: ;
+  --c-rd-5: ;
+  --c-grid-gap: 2px;
+}
