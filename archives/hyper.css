@@ -1,9 +1,9 @@
 /*
 HyperCSS ©2021
 
-Latest Version: 1.0.5
+Latest Version: 1.0.6
 
-Changes: Word Break
+Changes: Hiding Items
 */
 
 body {
@@ -24,7 +24,15 @@ a {
 }
 
 *:focus{
-  outline: none;
+  outline: none; /*Always add a focus for accesibility*/
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.full-hidden{
+  display: none;
 }
 
 /*Text*/
