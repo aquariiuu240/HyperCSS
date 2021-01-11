@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/debd1c70-ac8e-4e71-8734-0f5c6b32b1f2%2Fpixil-frame-0%20(6).ico?v=1610406373086"
+      type="image/x-icon"
+    />
+    <title>Docs</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://hypercss.glitch.me/dev/hyper.css" />
+    <link rel="stylesheet" href="https://hypercss.glitch.me/css/config.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body class="t-monospace b-grey-10 t-grey-100">
+    <div class="nav pos-sticky">
+      <h1
+        class="t-center t-en hover-t-grey-90 crs-pointer"
+        onclick="window.location = '/'"
+      >
+        HyperCSS docs
+      </h1>
+    </div>
+    <div class="grid c-bw-2 bd-grey-100">
+      <div
+        class="grid-md-10 grid-lg-10 sm-hidden xs-hidden c-bw-1 bd-grey-100 p-sm"
+      >
+        <h2>
+          Contents
+        </h2>
+        <a href="../docs" class="t-plain t-bold">Getting Started</a>
+        <br />
+        <br />
+        <a href="../docs/classes-and-terms" class="t-plain t-bold t-italic"
+          >Classes and Terms</a
+        >
+             <br />
+        <br />
+        <a href="../docs/grid-setup" class="t-plain t-bold"
+          >Grid Setup</a
+        >
+        <br>
+        <br>
+        <a href="../docs/customization" class="t-plain t-bold">Customization</a>
+      </div>
+
+      <div class="grid-md-50 grid-lg-50 grid-sm-60 grid-xs-60 p-sm">
+        <div class="p-md t-ml">
+          <h1>
+            Classes and Terms
+          </h1>
+          <h2>
+            The Two Types
+          </h2>
+          <p>
+            Hyper three <i>main</i> types of classes. Size, color, and word.
+            Each follows the same patterns, so learning these is the first step
+            on learning Hyper.
+          </p>
+          <h2>
+            Size
+          </h2>
+          <p>
+            Size tags have 7 "options". For example, take text size. The 7
+            options are as follows:
+          </p>
+          <br />
+          <ol>
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-sm</code
+              >
+              (smallest)
+            </li>
+            <br />
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-ms</code
+              >
+              (medium-small)
+            </li>
+            <br />
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-md</code
+              >
+              (medium)
+            </li>
+            <br />
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-ml</code
+              >
+              (medium-large)
+            </li>
+            <br />
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-lg</code
+              >
+              (large)
+            </li>
+            <br />
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-hg</code
+              >
+              (huge)
+            </li>
+            <br />
+            <li>
+              <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+                >t-en</code
+              >
+              (enourmous)
+            </li>
+            <br />
+          </ol>
+          <p>
+            So when changing text size, you would use
+            <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >t-&lt;size&gt;</code
+            >
+            So let's take our HTML document, and try this out.
+          </p>
+          <div class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms t-break">
+            <p>&lt;html&gt;</p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;head&gt;</p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;title&gt;My First HyperCSS
+              Document&lt;/title&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;link
+              rel=&quot;stylesheet&quot;
+              href=&quot;https://hypercss.glitch.me/archives/hyper.css&quot;&gt;
+            </p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;/head&gt;</p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;body&gt;</p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h1 class="t-en"&gt;This is
+              my first HyperCSS document&lt;/h1&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class="t-ms"&gt;Isn&apos;t
+              that cool?&lt;/p&gt;
+            </p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;/body&gt;</p>
+            <p>&lt;/html&gt;</p>
+          </div>
+          <p>
+            The other size classes are bw-size (border-width), rd-size
+            (border-radius), and p-sm (padding)
+          </p>
+          <h2>
+            Color
+          </h2>
+          <p>
+            Hyper has four color schemes, with more coming. The four color
+            schemes are red, blue, green and grey. To change the darkness, add
+            numbers on the end. red-100 is red, and red-50 is maroon. (The
+            numbers go by tens, so red-10 is the darkest, red-20 is second
+            darkest and so on and so on)
+          </p>
+          <p>
+            For changing text-color, use
+            <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >t-&lt;color&gt;-&lt;amount&gt;</code
+            >
+          </p>
+          <div class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms t-break">
+            <p>&lt;html&gt;</p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;head&gt;</p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;title&gt;My First HyperCSS
+              Document&lt;/title&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;link
+              rel=&quot;stylesheet&quot;
+              href=&quot;https://hypercss.glitch.me/archives/hyper.css&quot;&gt;
+            </p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;/head&gt;</p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;body&gt;</p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;h1 class="t-en
+              t-red-100"&gt;This is my first HyperCSS document&lt;/h1&gt;
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;p class="t-ms
+              t-blue-100"&gt;Isn&apos;t that cool?&lt;/p&gt;
+            </p>
+            <p>&nbsp; &nbsp; &nbsp;&lt;/body&gt;</p>
+            <p>&lt;/html&gt;</p>
+          </div>
+          <p>
+            Some other color elements include bd-color (border) and b-color
+            (background-color)
+          </p>
+          <p>
+            <b>Note:</b> A feature that <i>all</i> color classes have are selectors. 
+            If you want to change color on hover or focus, add  <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >hover-</code
+            > or  <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >focus-</code
+            > before, like  <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >hover-b-blue-90</code
+            >
+          </p>
+          <h2>
+            Word
+          </h2>
+          <p>
+            Word classes are the misc. section. Some examples include
+            <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >t-sans-serif</code
+            >,
+            <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >t-break</code
+            >
+            and
+            <code class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms"
+              >pos-relative</code
+            >
+          </p>
+          <a href="../docs/grid-setup">Getting Started with grid</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
