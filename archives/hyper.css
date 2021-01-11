@@ -1,9 +1,9 @@
 /*
 HyperCSS ©2021
 
-Latest Version: 1.0.4
+Latest Version: 1.0.5
 
-Changes: Border width added (.bw-<size>)
+Changes: Word Break
 */
 
 body {
@@ -47,6 +47,10 @@ a {
 
 .t-plain{
   text-decoration: none;
+}
+
+.t-break{
+  word-break: break-all;
 }
 
 .t-sm {
