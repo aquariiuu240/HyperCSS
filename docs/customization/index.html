@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/debd1c70-ac8e-4e71-8734-0f5c6b32b1f2%2Fpixil-frame-0%20(6).ico?v=1610406373086"
+      type="image/x-icon"
+    />
+    <title>Docs</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://hypercss.glitch.me/dev/hyper.css" />
+    <link rel="stylesheet" href="https://hypercss.glitch.me/css/config.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body class="t-monospace b-grey-10 t-grey-100">
+    <div class="nav pos-sticky">
+      <h1
+        class="t-center t-en hover-t-grey-90 crs-pointer"
+        onclick="window.location = '/'"
+      >
+        HyperCSS docs
+      </h1>
+    </div>
+    <div class="grid c-bw-2 bd-grey-100">
+      <div
+        class="grid-md-10 grid-lg-10 sm-hidden xs-hidden c-bw-1 bd-grey-100 p-sm"
+      >
+        <h2>
+          Contents
+        </h2>
+        <a href="../docs" class="t-plain t-bold">Getting Started</a>
+        <br />
+        <br />
+        <a href="/classes-and-terms" class="t-plain t-bold "
+          >Classes and Terms</a
+        >
+        <br />
+        <br />
+        <a href="../docs/grid-setup" class="t-plain t-bold">Grid Setup</a>
+        <br />
+        <br />
+        <a href="../docs/customization" class="t-plain t-bold t-italic"
+          >Customization</a
+        >
+      </div>
+
+      <div class="grid-md-50 grid-lg-50 grid-sm-60 grid-xs-60 p-sm">
+        <div class="p-md t-ml">
+          <h1>
+            Customization
+          </h1>
+          <h2 class="t-monospace">
+            config.css
+          </h2>
+          <p>
+            The HyperCSS code already has customization built into it, using css
+            variables. All you need to do is create and link to in your html, a
+            config.css file.
+          </p>
+          <h2>
+            What the file should look like
+          </h2>
+          <p>
+            Copy this file, and add it to your project:
+          </p>
+          <div class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms t-break">
+            <p>:root {</p>
+            <p>&nbsp; /*Color*/</p>
+            <p>&nbsp; --c-b-1: ;</p>
+            <p>&nbsp; --c-b-2: ;</p>
+            <p>&nbsp; --c-b-3: ;</p>
+            <p>&nbsp; --c-b-4: ;</p>
+            <p>&nbsp; --c-b-5: ;</p>
+            <p>&nbsp; --c-t-1: ;</p>
+            <p>&nbsp; --c-t-2: ;</p>
+            <p>&nbsp; --c-t-3: ;</p>
+            <p>&nbsp; --c-t-4: ;</p>
+            <p>&nbsp; --c-t-5: ;</p>
+            <p>&nbsp; /*Text-Size*/</p>
+            <p>&nbsp; --c-ts-1: ;</p>
+            <p>&nbsp; --c-ts-2: ;</p>
+            <p>&nbsp; --c-ts-3: ;</p>
+            <p>&nbsp; --c-ts-4: ;</p>
+            <p>&nbsp; --c-ts-5: ;</p>
+            <p>&nbsp; /*Border*/</p>
+            <p>&nbsp; --c-bd-1: ;</p>
+            <p>&nbsp; --c-bd-2: ;</p>
+            <p>&nbsp; --c-bd-3: ;</p>
+            <p>&nbsp; --c-bd-4: ;</p>
+            <p>&nbsp; --c-bd-5: ;</p>
+            <p>&nbsp; --c-bw-1: ;</p>
+            <p>&nbsp; --c-bw-2: ;</p>
+            <p>&nbsp; --c-bw-3: ;</p>
+            <p>&nbsp; --c-bw-4: ;</p>
+            <p>&nbsp; --c-bw-5: ;</p>
+            <p>&nbsp; --c-rd-1: ;</p>
+            <p>&nbsp; --c-rd-2: ;</p>
+            <p>&nbsp; --c-rd-3: ;</p>
+            <p>&nbsp; --c-rd-4: ;</p>
+            <p>&nbsp; --c-rd-5: ;</p>
+            <p>&nbsp; --c-grid-gap: ;</p>
+            <p>}</p>
+          </div>
+          <p>
+            Then, you can fill in your custom wants. Do you want a specific hex code for background color? Put it in after the colon after the "--c-b-1" (which stands for custom background one). Then, call it using the class c-b-1.
+          </p>
+          <p>
+            Example: 
+          </p>
+                    <div class="p-sm b-grey-50 t-grey-0 t-monospace rd-ms t-break">
+            <p>:root {</p>
+            <p>&nbsp; /*Color*/</p>
+            <p>&nbsp; --c-b-1: #0096fd;</p>
+            <p>&nbsp; --c-b-2: ;</p>
+            <p>&nbsp; --c-b-3: ;</p>
+            <p>&nbsp; --c-b-4: ;</p>
+            <p>&nbsp; --c-b-5: ;</p>
+            <p>&nbsp; --c-t-1: ;</p>
+            <p>&nbsp; --c-t-2: ;</p>
+            <p>&nbsp; --c-t-3: ;</p>
+            <p>&nbsp; --c-t-4: ;</p>
+            <p>&nbsp; --c-t-5: ;</p>
+            <p>&nbsp; /*Text-Size*/</p>
+            <p>&nbsp; --c-ts-1: ;</p>
+            <p>&nbsp; --c-ts-2: ;</p>
+            <p>&nbsp; --c-ts-3: ;</p>
+            <p>&nbsp; --c-ts-4: ;</p>
+            <p>&nbsp; --c-ts-5: ;</p>
+            <p>&nbsp; /*Border*/</p>
+            <p>&nbsp; --c-bd-1: ;</p>
+            <p>&nbsp; --c-bd-2: ;</p>
+            <p>&nbsp; --c-bd-3: ;</p>
+            <p>&nbsp; --c-bd-4: ;</p>
+            <p>&nbsp; --c-bd-5: ;</p>
+            <p>&nbsp; --c-bw-1: 1px 0px 0px 0px;</p>
+            <p>&nbsp; --c-bw-2: 0px 0px 1px 0px;</p>
+            <p>&nbsp; --c-bw-3: ;</p>
+            <p>&nbsp; --c-bw-4: ;</p>
+            <p>&nbsp; --c-bw-5: ;</p>
+            <p>&nbsp; --c-rd-1: 25%;</p>
+            <p>&nbsp; --c-rd-2: 10%;</p>
+            <p>&nbsp; --c-rd-3: ;</p>
+            <p>&nbsp; --c-rd-4: ;</p>
+            <p>&nbsp; --c-rd-5: ;</p>
+            <p>&nbsp; --c-grid-gap: 2px;</p>
+            <p>}</p>
+          </div>
+          <p>
+            <a
+              href="https://codepen.io/bluephoenix37/pen/gOwdyQb"
+              target="_blank"
+              >View Codepen Demo</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
