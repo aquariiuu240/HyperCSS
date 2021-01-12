@@ -1,5 +1,5 @@
 # HyperCSS
-### v1.0.6
+### v1.0.7 beta
 
 A responsive, customizable, 60 column css grid framework 
 
