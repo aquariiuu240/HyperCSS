@@ -1,9 +1,9 @@
 /*
 HyperCSS ©2021
 
-Latest Version: 1.0.6
+Latest Version: 1.0.7 beta
 
-Changes: Hiding Items
+Changes: Templates to start being added
 */
 
 body {
@@ -24,7 +24,7 @@ a {
 }
 
 *:focus{
-  outline: none; /*Always add a focus for accesibility*/
+  outline: none; /*Always add a focus for accessibility*/
 }
 
 .hidden{
@@ -33,6 +33,25 @@ a {
 
 .full-hidden{
   display: none;
+}
+
+/*Templates*/
+
+.full-screen{
+  height: 100vh;
+  width: 100vw;
+}
+
+.quote-left{
+  border-left: 7px solid var(--contrast-color);
+  text-align: left;
+  padding: 20px;
+}
+
+.quote-right{
+  border-right: 7px solid var(--contrast-color);
+  text-align: right;
+  padding: 20px;
 }
 
 /*Text*/
