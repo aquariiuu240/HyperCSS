@@ -1,7 +1,7 @@
 /*
 HyperCSS ©2021
 
-Latest Version: 1.0.7 beta
+Latest Version: 1.0.7 
 
 Changes: Templates to start being added
 */
@@ -52,6 +52,10 @@ a {
   border-right: 7px solid var(--contrast-color);
   text-align: right;
   padding: 20px;
+}
+
+.parralax{
+  background-attachment: fixed;
 }
 
 /*Text*/
